@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NumbersBox from './components/NumbersBox';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
        <h1>Calculate Me</h1>
       </header>
       <main className='calculator-container'>
-      <NumbersBox/>
+        <Calculator/>
       </main>
     </>
   );
