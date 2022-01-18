@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import Calculator from './components/Calculator';
+import { UserContextProvider } from './context/UserContext';
+import Screen from './components/Screen';
+import Buttons from './components/Buttons'
 
 function App() {
   return (
@@ -8,9 +10,12 @@ function App() {
       <header>
        <h1>Calculate Me</h1>
       </header>
-      <main className='calculator-container'>
-        <Calculator/>
-      </main>
+      <UserContextProvider>
+        <main className='calculator-container'>
+          <Screen/>
+          <Buttons/>
+        </main>
+      </UserContextProvider>
     </>
   );
 }

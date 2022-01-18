@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles.css';
+import UserContext from '../../context/UserContext' 
 
-export default function Buttons ({userNumbers, setUserNumbers}){
+export default function Buttons (){
+
+  const {userNumbers, setUserNumbers} = useContext(UserContext)
 
   const buttons = ['+', '-', '*', '/', 7,8,9,4,5,6,1,2,3,0,'.']
 
   const handleButtonClick = (num) => (ev) => {
     setUserNumbers(userNumbers + num.toString())
   };
+
   const handleEqual = () => {
     try{
       setUserNumbers(eval(userNumbers))
@@ -15,12 +19,15 @@ export default function Buttons ({userNumbers, setUserNumbers}){
       alert('Check your equation')
     }
   };
+
   const handleDelete = () => {
     setUserNumbers('')
   };
+
   const handlePartialDelete = () => {
     setUserNumbers(userNumbers.toString().slice(0,-1))
   };
+
   const handleExponential = () => {
     setUserNumbers(userNumbers + '**')
   };

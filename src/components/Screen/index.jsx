@@ -1,7 +1,10 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import './styles.css';
+import UserContext from '../../context/UserContext' 
 
-export default function Screen ({userNumbers, setUserNumbers}){
+export default function Screen (){
+
+  const {userNumbers, setUserNumbers} = useContext(UserContext)
 
   const handleChange = (e) =>{
     const equation = e.target.value
