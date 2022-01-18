@@ -1,4 +1,4 @@
-import reactRefresh from '@vitejs/plugin-react-refresh'
+import reactRefresh from '@vitejs/plugin-react-refresh';
 
 /**
  * https://vitejs.dev/config/
@@ -9,7 +9,7 @@ export default {
   server: {
     host: '0.0.0.0',
     hmr: {
-      port: 443,
-    }
-  }
-}
+      port: 3000,
+    },
+  },
+};
