@@ -1,13 +1,39 @@
-## Running React on Repl.it
+## Getting Started
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+Clone the repository
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+- With SSH
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+```bash
+git clone git@github.com:username/ReactCalcutator.git
+```
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the `.replit` file.
+- With https
+```bash
+git clone https://github.com/username/ReactCalcutator.git
+```
+
+Install the dependencies:
+
+```sh
+$ npm install
+// or
+$ yarn
+```
+
+Run in dev mode:
+
+```sh
+$ npm run dev
+// or
+$ yarn dev
+```
+
+### Built With
+
+- JavaScript
+- [Vite](https://vitejs.dev)
+- [React](https://reactjs.org/)
+
+
