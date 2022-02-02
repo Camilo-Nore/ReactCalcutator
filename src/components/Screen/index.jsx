@@ -17,7 +17,7 @@ export default function Screen (){
     try{
       setUserNumbers(eval(userNumbers))
     }catch{
-      alert('Check your equation')
+      setUserNumbers('Syntax Error')
     }
   }
 

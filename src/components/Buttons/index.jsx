@@ -16,7 +16,7 @@ export default function Buttons (){
     try{
       setUserNumbers(eval(userNumbers))
     }catch{
-      alert('Check your equation')
+      setUserNumbers('Syntax Error')
     }
   };
 
