@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import './styles.css';
+import './Buttons.css';
 import UserContext from '../../context/UserContext' 
 
 export default function Buttons (){

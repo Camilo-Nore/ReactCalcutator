@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import './styles.css';
+import './Screen.css';
 import UserContext from '../../context/UserContext' 
 
 export default function Screen (){
